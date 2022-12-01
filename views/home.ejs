@@ -1,0 +1,15 @@
+<%- include(`partials/header`) -%>
+
+<main>
+  <h1>Home</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sint, perspiciatis repellat quis incidunt laudantium vel at molestias a, explicabo minima non vero repudiandae velit nesciunt nemo harum, voluptatem neque?
+    Repellendus quae, fugiat voluptas laudantium et molestias. Dolorem natus, facere voluptatibus libero, illum eos sit exercitationem tenetur molestias ratione suscipit. Beatae voluptatem ex reiciendis! Beatae harum assumenda dicta fugiat ipsam.</p>
+
+  <% newPost.forEach((post) => { %>
+  <h2><%= post.postTitle %> </h2>
+  <p><%= post.postBody.substring(0, 100) + ` ...` %> <a href="/posts/<%= _.lowerCase(post.postTitle) %>">Read more</a></p>
+  <% }) %>
+
+</main>
+
+<%- include(`partials/footer`) -%>

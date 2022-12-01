@@ -1,0 +1,26 @@
+main {
+  padding: 3rem;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+}
+
+.nav-item {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 871px) {
+  .nav-item {
+    text-align: center;
+  }
+}
